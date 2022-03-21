@@ -1,7 +1,6 @@
-# A Simple Digital Poem
+# Man's Best Frienemy
 
-A simple digital poem that builds each line from three lists created as an example for the Horizons Digital Writing lab.
 
 ## Made on [Glitch](https://glitch.com/)
 
-\ ゜ o ゜)ノ
+ ¯\_(ツ)_/¯

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
     <!-- end custom font -->
@@ -17,14 +18,14 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 2em;
-        background-color: #000;
-        color: #fff;
+        background-color: #fac962;
+        color: #693d0f;
         font-size: 1.2em;
       }
       h1 {
-        color: #fff;
+        color: #693d0f;
       }
       #poem > div {
         height: 1.2em;
@@ -35,13 +36,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>Man's Best Frienemy</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "bicycles,I,neighbours,passerbys".split(","),
+        verbs = "yell,pet,bite,taunt,growl,bark".split(","),
+        objects = "the dog,the cat,the owner,it,the fence".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +62,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " at " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
